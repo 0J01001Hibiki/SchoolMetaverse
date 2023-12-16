@@ -4,36 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | schoolMetaverse</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    
+    
     <!-- HTMLファイルをキャッシュしない -->
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
     <!-- Pragmaヘッダーを使用してキャッシュを無効化 -->
     <meta http-equiv="Pragma" content="no-cache">
     <!-- 過去の日付を指定して即座に無効化 -->
     <meta http-equiv="Expires" content="Mon, 01 Jan 1990 00:00:00 GMT">
-    <title>Unity WebGL Player | schoolMetaverse</title>
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>    
+    <script>
+      // firebaseのconfig
+      const firebaseConfig = {
+        apiKey: "AIzaSyBHrF62e-orKFuZ97slS8SLI0TZq5G2fdA",
+        authDomain: "schoolmetaverse-d9a6d.firebaseapp.com",
+        databaseURL: "https://schoolmetaverse-d9a6d-default-rtdb.firebaseio.com",
+        projectId: "schoolmetaverse-d9a6d",
+        storageBucket: "schoolmetaverse-d9a6d.appspot.com",
+        messagingSenderId: "140620415241",
+        appId: "1:140620415241:web:1fdc9b1ea012792bce13d8"
+      };
+
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const db = app.firestore();
+      window.db = db;
+
+      console.log(app);
+      console.log(window.db);
+    </script>
+
+
+
+
   </head>
   <body>
-    <div id="unity-container">
-      <div id="unity-canvas-container" style="width: 100%; height: 100%;">
-        <canvas id="unity-canvas" style="width: 100%; height: 100%;"></canvas>
-      </div>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <button id="entervr" value="Enter VR" disabled>VR</button>
-        <button id="enterar" value="Enter AR" disabled>AR</button>
-        <div id="unity-webxr-link">Using <a href="https://github.com/De-Panther/unity-webxr-export" target="_blank" title="WebXR Export">WebXR Export</a></div>
-        <div id="unity-build-title">schoolMetaverse</div>
-      </div>
-    </div>
+    
+    
+
+
+    
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/SchoolMetaverse.loader.js";

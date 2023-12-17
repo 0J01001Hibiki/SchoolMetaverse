@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PseudoHologram</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" ></script>
+</head>
+<body>
+  <body>
+    <div class="toggleButtonArea">
+      <button class="toggleButton">
+        切り替え
+      </button>
+      <button class="toggleButton">
+        反転
+      </button>
+      <input class="idtext" type="text" placeholder="IDを入力してください">
+      <button class="connectStartButton">
+        通信開始
+      </button>
+    </div>
+    <div class="videoArea_wrap">
+      <div class="oneDivisionVideoArea" style="display: none; rotate: 0deg;">
+        <video class="oneArea" src="./videos/laser_-_96705 (360p).mp4" autoplay muted loop playsinline>
+          <p>video要素がサポートされていあにブラウザでご覧になっています。</p>
+        </video>
+      </div>
+      <div class="fourDivisionsVideoArea" style="display: block;">
+        <div class="topArea_wrap" style="rotate: 0deg;">
+          <div class="topArea">
+            <video class="topVideo" src="./videos/laser_-_96705 (360p).mp4" autoplay muted loop playsinline>
+              <p>video要素がサポートされていあにブラウザでご覧になっています。</p>
+            </video>
+          </div>
+        </div>
+        <div class="rightArea_wrap" style="rotate: 90deg;">
+          <div class="rightArea">
+            <video class="rightVideo" src="./videos/laser_-_96705 (360p).mp4" autoplay muted loop playsinline>
+              <p>video要素がサポートされていあにブラウザでご覧になっています。</p>
+            </video>
+          </div>
+        </div>
+        <div class="bottomArea_wrap" style="rotate: 180deg;">
+          <div class="bottomArea">
+            <video class="bottomVideo" src="./videos/laser_-_96705 (360p).mp4" autoplay muted loop playsinline>
+              <p>video要素がサポートされていあにブラウザでご覧になっています。</p>
+            </video>
+          </div>
+        </div>
+        <div class="leftArea_wrap" style="rotate: -90deg;">
+          <div class="leftArea">
+            <video class="leftVideo" src="./videos/laser_-_96705 (360p).mp4" autoplay muted loop playsinline>
+              <p>video要素がサポートされていあにブラウザでご覧になっています。</p>
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

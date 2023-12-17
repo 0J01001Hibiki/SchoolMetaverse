@@ -66,17 +66,20 @@ window.addEventListener('load', () => {
   function userReaction(text) {
     if(text in videos) {
       videosChange(videos[text]);
+      console.log(`あるよ ${videos[text]}`);
     } else {
       videosChange(videos['default']);
+      console.log(`ないよ ${videos['default']}`);
     }
   }
   function videosChange(src) {
     src = './videos/' + src;
-    oneArea.src = src;
-    topVideo.src = src;
-    rightVideo.src = src;
-    bottomVideo.src = src;
-    leftVideo.src = src;
+    console.log(src);
+    oneArea.src = src;oneArea.load();
+    topVideo.src = src;topVideo.load();
+    rightVideo.src = src;rightVideo.load();
+    bottomVideo.src = src;bottomVideo.load();
+    leftVideo.src = src;leftVideo.load();
   }
   
 });

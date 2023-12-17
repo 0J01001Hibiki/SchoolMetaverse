@@ -32,11 +32,11 @@ window.addEventListener('load', () => {
     connectStart: 'fantasy_-_121229 (720p).mp4',
     none: 'fantasy_-_121229 (720p).mp4',
   };
-  const oneArea = document.getElementsByClassName('oneArea');
-  const topVideo = document.getElementsByClassName('topVideo');
-  const rightVideo = document.getElementsByClassName('rightVideo');
-  const bottomVideo = document.getElementsByClassName('bottomVideo');
-  const leftVideo = document.getElementsByClassName('leftVideo');
+  const oneArea = document.getElementsByClassName('oneArea')[0];
+  const topVideo = document.getElementsByClassName('topVideo')[0];
+  const rightVideo = document.getElementsByClassName('rightVideo')[0];
+  const bottomVideo = document.getElementsByClassName('bottomVideo')[0];
+  const leftVideo = document.getElementsByClassName('leftVideo')[0];
   var firebaseConfig = {
     apiKey: "AIzaSyBHrF62e-orKFuZ97slS8SLI0TZq5G2fdA",
     authDomain: "schoolmetaverse-d9a6d.firebaseapp.com",

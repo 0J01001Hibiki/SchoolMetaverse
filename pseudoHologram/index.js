@@ -71,11 +71,12 @@ window.addEventListener('load', () => {
     }
   }
   function videosChange(src) {
+    src = './videos/' + src;
     oneArea.src = src;
     topVideo.src = src;
     rightVideo.src = src;
     bottomVideo.src = src;
-    leftVideo.src = src; 
+    leftVideo.src = src;
   }
   
 });
